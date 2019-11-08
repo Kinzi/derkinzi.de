@@ -36,10 +36,12 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
     "frontmatter-markdown-loader": "^3.1.0",
+    "fs": "0.0.1-security",
     "husky": "^2.6.0",
     "lint-staged": "^8.2.1",
     "prettier": "^1.16.4",
     "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0"
+    "pug-plain-loader": "^1.0.0",
+    "yaml-front-matter": "^4.0.0"
   }
 }

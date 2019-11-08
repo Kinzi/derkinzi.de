@@ -18,6 +18,25 @@ export default {
     return {
       posts: imports
     }
+  },
+  head() {
+    return {
+      title: 'Projects',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            "All the projects I'm working on at the moment. On some of them more actively then on others. :)"
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://derkinzi.de/projects'
+        }
+      ]
+    }
   }
 }
 </script>

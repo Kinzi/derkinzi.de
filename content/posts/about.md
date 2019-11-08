@@ -3,12 +3,7 @@ title: About
 slug: /about
 short: A blog post about nothing again. It just keeps coming. A blog post about nothing again. It just keeps coming. A blog post about nothing again. It just keeps coming. A blog post about nothing again. It just keeps coming.
 feature: /images/2016/05/kirgis.jpg
-date: 01/11/2019
 type: page
-tags:
-  - code
-  - nuxt
-  - JAM
 ---
 
 I thrive to be a creator of things. Finding solutions for challenging problems that are out of my comfort zone is what get me going - as this is the best way for me to learn and grow.

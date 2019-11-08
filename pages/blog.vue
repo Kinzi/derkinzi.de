@@ -27,6 +27,24 @@ export default {
     return {
       posts: imports
     }
+  },
+  head() {
+    return {
+      title: 'Blog posts',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'All blog posts on derkinzi.de'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://derkinzi.de/blog'
+        }
+      ]
+    }
   }
 }
 </script>

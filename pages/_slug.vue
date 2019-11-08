@@ -2,13 +2,14 @@
   #post
     .post-title
       h1 {{post.attributes.title}}
-    .post-meta.flex.text-gray-500.justify-between.my-4(v-if="!post.attributes.type")
+    .post-meta.flex.text-gray-500.justify-between.my-4.flex-col(class="md:flex-row" v-if="!post.attributes.type")
       .date {{post.attributes.date}}
       .tags
-        span.mr-2(v-for="tag in post.attributes.tags") \#{{tag}}
+        span.mr-2(v-for="tag in post.attributes.tags")
+          nuxt-link(:to="'/tag/'+tag") \#{{tag}}
     img.my-4.w-full.h-128.object-cover(:src="post.attributes.feature" v-if="post.attributes.feature")
     .content(v-html="post.html")
-    vue-disqus(shortname="derkinzi" :identifier="post.attributes.slug" :url="$route.fullPath")
+    vue-disqus(shortname="derkinzi" :identifier="post.attributes.slug" :url="$route.fullPath" v-if="!post.attributes.type")
 </template>
 
 <script>
@@ -35,6 +36,12 @@ export default {
           name: 'description',
           content: this.post.attributes.short
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://derkinzi.de' + this.post.attributes.slug
+        }
       ]
     }
   }
@@ -55,7 +62,7 @@ export default {
 }
 
 .content >>> code {
-  @apply .bg-gray-300 .py-1 .px-2 .font-mono;
+  @apply .bg-gray-300 .px-1 .font-mono .rounded .border .border-gray-400;
 }
 
 .content >>> hr {
@@ -76,7 +83,11 @@ export default {
 
 .content >>> code[class*='language-'],
 .content >>> pre[class*='language-'] {
-  @apply .font-mono !important;
+  @apply .font-mono !important .border-none;
+}
+
+.content >>> code[class*='language-'] {
+  @apply .p-0;
 }
 
 .content >>> blockquote {
@@ -85,5 +96,12 @@ export default {
 
 .content >>> h3 {
   @apply .text-xl .font-mono .text-gray-800 .mb-4;
+}
+
+.content >>> .crop-post-image {
+  object-fit: cover;
+  width: 126%;
+  height: 100%;
+  max-height: 350px;
 }
 </style>
