@@ -117,7 +117,8 @@ export default async () => {
     modules: ['nuxt-responsive-loader'],
     responsiveLoader: {
       name: 'images/[name]-[width].[ext]',
-      sizes: [320, 640, 768, 1024, 1280, 1600, 1920]
+      sizes: [320, 640, 768, 1024, 1280, 1600, 1920],
+      quality: 85
     },
     generate: {
       routes: dynamicRoutes

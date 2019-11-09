@@ -7,7 +7,7 @@
       .tags
         span.mr-2(v-for="tag in post.attributes.tags")
           nuxt-link(:to="'/tag/'+tag") \#{{tag}}
-    img.my-4.w-full.h-128.object-cover(:src="'~/assets' + post.attributes.feature" :srcset="require('~/assets' + post.attributes.feature).srcSet" v-if="post.attributes.feature")
+    img.my-4.w-full.h-128.object-cover(:src="'~/assets' + post.attributes.feature" :srcset="require('~/assets' + post.attributes.feature).srcSet" sizes="(min-width: 768px) 60vw, 95vw" v-if="post.attributes.feature")
     .content(v-html="post.html")
     vue-disqus(shortname="derkinzi" :identifier="post.attributes.slug" :url="$route.fullPath" v-if="!post.attributes.type")
 </template>
