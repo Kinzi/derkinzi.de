@@ -3,7 +3,7 @@ header#header.fixed
   .h-full.bg-center.shadow-inner.bg-gray-800.flex.justify-between.px-4.items-center.h-16(class="lg:flex-col lg:justify-around lg:px-0")
     .p-2
       a.flex.content-center.items-center(class="lg:flex-col" href="/")
-        img.shadow-lg.rounded-full.border-2.border-teal-500.w-12(class="lg:w-32 lg:mx-auto" src="/images/derkinzi.jpg")
+        img.shadow-lg.rounded-full.border-2.border-teal-500.w-12(class="lg:w-32 lg:mx-auto" src="~/assets/images/derkinzi.jpg" :srcset="require('~/assets/images/derkinzi.jpg').srcSet")
         .font-mono.text-orange-500.ml-2(class="lg:text-2xl lg:text-center lg:mt-4 lg:inline-block lg:ml-0") [derkinzi]
 
     button.block.text-teal-500(@click='isOpen = !isOpen' type='button' class='lg:hidden hover:text-white focus:text-white focus:outline-none')

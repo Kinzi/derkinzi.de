@@ -2,7 +2,7 @@
 title: Set up automatic backups for parse-server on digital ocean
 slug: /set-up-automatic-backups-for-parse-server-on-digital-ocean
 short: A new year and a new startup. In 2017 I have been fully focused on myDash and finally got it to a pretty stable state in Q4. It was an awesome process and I really learned how to deal with APIs in the process.
-feature: https://c1.staticflickr.com/5/4065/4473026883_a6ebb799d8_o.png
+# feature: https://c1.staticflickr.com/5/4065/4473026883_a6ebb799d8_o.png
 date: 25/05/2016
 tags:
   - code

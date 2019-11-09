@@ -2,7 +2,7 @@
 title: Best resources for stock images
 slug: /best-resources-for-stock-images
 short: My ongoing list of my favorite stock image resources. Both free and paid.
-feature: images/2016/12/good-stock-images.jpg
+feature: /images/2016/12/good-stock-images.jpg
 date: 05/12/2016
 tags:
   - comments

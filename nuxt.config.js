@@ -2,7 +2,7 @@ import path from 'path'
 import getDynamicPaths from './server/fetchRoutes'
 import createSitemap from './server/sitemap'
 
-// TODO: finish home page, disqus, reduce tailwindcss
+// TODO: finish home page, optimize images, disqus, reduce tailwindcss
 
 export default async () => {
   // Create an array of all dynamic pages for nuxt generate
@@ -97,7 +97,11 @@ export default async () => {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ['~/plugins/prism', '~/plugins/disqus'],
+    plugins: [
+      '~/plugins/prism',
+      '~/plugins/disqus',
+      '~/plugins/lazysizes.client.js'
+    ],
     /*
      ** Nuxt.js dev-modules
      */
@@ -110,7 +114,13 @@ export default async () => {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: ['nuxt-responsive-loader'],
+    responsiveLoader: {
+      name: 'images/[name]-[width].[ext]',
+      placeholder: true,
+      adapter: require('responsive-loader/sharp'),
+      quality: 65
+    },
     generate: {
       routes: dynamicRoutes
     },
@@ -126,6 +136,8 @@ export default async () => {
        */
       extend(config, ctx) {
         if (ctx.isClient) {
+          ctx.loaders.vue.transformAssetUrls.img = ['data-src', 'src']
+          ctx.loaders.vue.transformAssetUrls.source = ['data-srcset', 'srcset']
           config.module.rules.push({
             enforce: 'pre',
             test: /\.(js|vue)$/,
