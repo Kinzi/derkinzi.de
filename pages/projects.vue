@@ -5,7 +5,7 @@
       a.relative.text-center.p-2.w-full(class="md:w-1/2" :href="post.attributes.url" v-for="post in posts" :key="post.attributes.title" target="_blank")
         .absolute.inset-0.flex.items-center.justify-center.m-auto.w-full(class="hover:bg-white50")
           h2.font-sans.mb-0 {{post.attributes.title}}
-        img.lazyload.w-full.rounded(:data-src="post.attributes.image" v-if="post.attributes.image")
+        img.lazyload.w-full.rounded(:src="'~/assets' + post.attributes.image" :srcset="require('~/assets' + post.attributes.image).srcSet" v-if="post.attributes.image")
 
 
 </template>

@@ -21,6 +21,7 @@
     }
   },
   "dependencies": {
+    "jimp": "^0.8.5",
     "lazysizes": "^5.1.2",
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",

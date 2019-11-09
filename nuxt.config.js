@@ -2,7 +2,7 @@ import path from 'path'
 import getDynamicPaths from './server/fetchRoutes'
 import createSitemap from './server/sitemap'
 
-// TODO: finish home page, optimize images, disqus, reduce tailwindcss
+// TODO: finish home page, disqus, reduce tailwindcss
 
 export default async () => {
   // Create an array of all dynamic pages for nuxt generate
@@ -117,9 +117,7 @@ export default async () => {
     modules: ['nuxt-responsive-loader'],
     responsiveLoader: {
       name: 'images/[name]-[width].[ext]',
-      placeholder: true,
-      adapter: require('responsive-loader/sharp'),
-      quality: 65
+      sizes: [320, 640, 768, 1024, 1280, 1600, 1920]
     },
     generate: {
       routes: dynamicRoutes
