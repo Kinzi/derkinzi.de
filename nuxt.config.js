@@ -1,14 +1,17 @@
 import path from 'path'
-import fs from 'fs'
-import glob from 'glob'
-import { loadFront } from 'yaml-front-matter'
+import getDynamicPaths from './server/fetchRoutes'
+import createSitemap from './server/sitemap'
+
+// TODO: finish home page, disqus, reduce tailwindcss
 
 export default async () => {
-  // Create an array of all pages fpr nuxt generate
+  // Create an array of all dynamic pages for nuxt generate
+  // tags will be handled differently
   const dynamicRoutes = await getDynamicPaths({
     '': 'posts/*.md',
     '/tag': 'posts/*.md'
   })
+  await createSitemap(dynamicRoutes)
   return {
     mode: 'universal',
     /*
@@ -64,6 +67,19 @@ export default async () => {
           rel: 'mask-icon',
           href: '/safari-pinned-tab.svg',
           color: '#7ec699'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=UA-49352822-2',
+          async: true,
+          defer: false
+        },
+        {
+          type: 'text/javascript',
+          innerHTML:
+            "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-49352822-2');"
         }
       ]
     },
@@ -129,55 +145,4 @@ export default async () => {
       }
     }
   }
-}
-
-/* https://github.com/jake-101/bael-template */
-async function getDynamicPaths(urlFilepathTable) {
-  let tags = []
-
-  // Fetch post files and extract tags
-  const fetchTags = (url) => {
-    return new Promise((resolve, reject) => {
-      glob.sync(urlFilepathTable[url], { cwd: 'content' }).map((filepath) => {
-        return fs.readFile(
-          `${path.resolve(__dirname)}/content/${filepath}`,
-          'utf8',
-          (err, data) => {
-            if (err) throw err
-            else {
-              const post = loadFront(data)
-              if (post.tags) tags = tags.concat(post.tags)
-              resolve()
-            }
-          }
-        )
-      })
-    })
-  }
-  const getData = () => {
-    return Promise.all(
-      Object.keys(urlFilepathTable).map((item) => fetchTags(item))
-    )
-  }
-  await getData()
-
-  // Delete duplicate tags
-  tags = tags.filter((item, pos) => tags.indexOf(item) === pos)
-
-  // Push tag pages to pages array
-  const pages = []
-  for (const tag of tags) {
-    pages.push('/tag/' + tag)
-  }
-
-  // Add pages and post to pages array and return
-  return pages.concat(
-    ...Object.keys(urlFilepathTable)
-      .filter((url) => url !== '/tag')
-      .map((url) => {
-        return glob
-          .sync(urlFilepathTable[url], { cwd: 'content' })
-          .map((filepath) => `${url}/${path.basename(filepath, '.md')}`)
-      })
-  )
 }

@@ -25,6 +25,7 @@ In the process of making this deep analysis of my site I learned a few things:
 ### Google Search Console has awesome data
 
 First of all I noticed again what a rich source of insights the Google Search Console can be for SEO work. Not only is it (I think) the only source for click-through-rates of search results, but it simply has all the search data that's relevant for your site for free: all the keywords and all the pages in the index. If you dig long and deep enough and combine this with Google analytics and maybe the Keyword Planner you can find out pretty much everything you'd want to know about your site and keyword performance right at the heart of Google.
+
 ![Google Search Console Dashboard](/images/2018/01/Bildschirmfoto-2018-01-19-um-17.58.08.png)
 
 ### Google Search Console is very hard to use
