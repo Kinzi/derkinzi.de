@@ -1,7 +1,7 @@
 <template lang="pug">
 .site
-  Header.w-full(class="lg:w-1/4 lg:fixed")
-  #content.bg-gray-200.w-full(class="lg:w-3/4")
+  Header.w-full(class="lg:w-1/5 lg:fixed")
+  #content.bg-gray-200.w-full(class="lg:w-4/5")
     .flex.relative.bg-gray-500.px-4.text-center.py-20.bg-local(class="md:px-12 lg:px-20")
       img.absolute.mx-auto.inset-0.object-cover.w-full.z-0.h-full(src="~/assets/images/2016/05/derkinzi-back.jpg" :srcset="require('~/assets/images/2016/05/derkinzi-back.jpg').srcSet" sizes="(min-width: 769px) 75vw, 100vw")
       .z-40.text-center
@@ -40,7 +40,7 @@ export default {
 
 @media (min-width: 769px) and (min-height: 767px) {
   #content {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 0;
   }
   #header {
@@ -49,4 +49,15 @@ export default {
     padding: 0;
   }
 }
+/* @media (min-width: 1280px) {
+  #content {
+    margin-left: 25%;
+    margin-top: 0;
+  }
+  #header {
+    height: 100%;
+    bottom: 0;
+    padding: 0;
+  }
+} */
 </style>

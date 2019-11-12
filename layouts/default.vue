@@ -1,7 +1,7 @@
 <template lang="pug">
 .site
-  Header.w-full(class="lg:w-1/4 lg:fixed")
-  #content.bg-gray-200.w-full.px-4(class="lg:w-3/4 md:px-12 lg:px-20")
+  Header.w-full(class="lg:w-1/5 lg:fixed")
+  #content.bg-gray-200.w-full.px-4(class="lg:w-4/5 md:px-12 lg:px-20")
     nuxt.py-4(class="md:py-12")
 </template>
 
@@ -33,7 +33,7 @@ export default {
 
 @media (min-width: 769px) and (min-height: 767px) {
   #content {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 0;
   }
   #header {
