@@ -2,7 +2,7 @@ import path from 'path'
 import getDynamicPaths from './server/fetchRoutes'
 import createSitemap from './server/sitemap'
 
-// TODO: finish home page, disqus, reduce tailwindcss
+// TODO: disqus
 
 export default async () => {
   // Create an array of all dynamic pages for nuxt generate
