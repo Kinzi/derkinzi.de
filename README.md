@@ -1,6 +1,8 @@
 # derkinzi
 
-> Personal Blog
+> My personal blog [derkinzi.de](https://derkinzi.de)
+
+It's build using nuxt and tailwindcss and makes use of markdown content files with front end matter.
 
 ## Build Setup
 
