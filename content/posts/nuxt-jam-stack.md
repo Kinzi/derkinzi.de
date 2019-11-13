@@ -1,5 +1,5 @@
 ---
-title: Building a SEO optimized blog with a Nuxt JAM stack   
+title: Building a SEO optimized blog with a Nuxt JAM stack and Markdown files 
 slug: /nuxt-jam-stack
 short: How to build a SEO optimized, static file blog with nuxtjs and markdown files. Including a sitemap.xml and category or tag pages.
 date: 07/11/2019
