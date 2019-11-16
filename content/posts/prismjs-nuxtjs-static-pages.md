@@ -3,7 +3,7 @@ title: Getting Prismjs working with Nuxt
 slug: /prismjs-nuxtjs-static-pages
 short: How to get prismjs to play nicely on a static website rendered with nuxt.
 date: 07/11/2019
-feature: /images/2019/prismjs-nuxt.jpg
+feature: /2019/prismjs-nuxt.jpg
 tags:
   - code
   - nuxt

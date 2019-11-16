@@ -1,6 +1,6 @@
 ---
 title: viabam
 url: https://viabam.com
-image:  /images/projects/viabam.jpg
+image:  /projects/viabam.jpg
 sort: 2
 ---

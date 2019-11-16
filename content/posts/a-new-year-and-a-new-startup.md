@@ -2,7 +2,7 @@
 title: A new year and a new startup
 slug: /a-new-year-and-a-new-startup
 short: A new year and a new startup. In 2017 I have been fully focused on myDash and finally got it to a pretty stable state in Q4. It was an awesome process and I really learned how to deal with APIs in the process.
-feature: /images/2018/01/share-keylogs-1.jpg
+feature: /2018/01/share-keylogs-1.jpg
 date: 19/01/2018
 tags:
   - code

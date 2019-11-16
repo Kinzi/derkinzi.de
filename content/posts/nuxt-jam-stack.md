@@ -3,7 +3,7 @@ title: Building a SEO optimized blog with a Nuxt JAM stack and Markdown files
 slug: /nuxt-jam-stack
 short: How to build a SEO optimized, static file blog with nuxtjs and markdown files. Including a sitemap.xml and category or tag pages.
 date: 07/11/2019
-feature: /images/2019/jam-stack-nuxt.jpg
+feature: /2019/jam-stack-nuxt.jpg
 tags:
   - code
   - nuxt
@@ -15,7 +15,7 @@ tags:
 
 This blog keeps evolving with me. It started as a flash(!) website about 12 years back, briefly resided in WordPress and has been a ghost installation for the past few years. Even though I don't write very regularly, every once in a while I rebuild it with some new system. Mainly to test some new development in web tech.
 
-This time I wanted to create a JAM stack without a CMS in the back for ease of maintenance. [JAM](https://jamstack.wtf/) stands for Javascript, API and Markup. All pages are pre-build and ready html files on the server. In my case I wanted the content with markdown files right in my code repository. So technically I'm skipping the A - does that make this a JM stack? Or better a JMM stack for markdown? Who knows - who cares? ¯&#92;\_(ツ)\_/¯ 
+This time I wanted to create a JAM stack without a CMS in the back for ease of maintenance. [JAM](https://jamstack.wtf/) stands for Javascript, API and Markup. All pages are pre-build and ready html files on the server. In my case I wanted the content with markdown files right in my code repository. So technically I'm skipping the A - does that make this a JM stack? Or better a JMM stack for markdown? Who knows - who cares? ¯&#92;\_(ツ)\_/¯
 
 > Hint: this was a pain to write in markdown with all the escapes: `¯&#92;\_(ツ)\_/¯`)
 
@@ -279,7 +279,7 @@ Here is what I want to tweak further for this blog:
 Done:
 
 - [Highlight code with PrismJs in Nuxt](/prismjs-nuxtjs-static-pages)
-- Optimize Images in Nuxt (post coming soon)
+- [Optimize Images in Nuxt](/optimized-responsive-lazyloading-images-with-nuxt)
 
 To do:
 

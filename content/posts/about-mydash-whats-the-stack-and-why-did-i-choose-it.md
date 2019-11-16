@@ -2,7 +2,7 @@
 title: About myDash - What’s the stack and why did I choose it?
 slug: /about-mydash-whats-the-stack-and-why-did-i-choose-it
 short: Learn about my framework choices for my startup myDash for frontend, backend, database and server and why I took them. 
-feature: /images/2017/10/mydash-frameworks.png
+feature: /2017/10/mydash-frameworks.png
 date: 16/10/2017
 tags:
   - code

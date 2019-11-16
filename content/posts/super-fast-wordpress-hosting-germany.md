@@ -2,7 +2,7 @@
 title: "WordPress hosting test: super fast on raidboxes.eu"
 slug: /super-fast-wordpress-hosting-germany
 short: How I drastically improved my site speed by switching from a vserver to WordPress optimized hosting on raidboxes.eu
-feature: /images/2016/09/raidboxes-speed.jpg
+feature: /2016/09/raidboxes-speed.jpg
 date: 09/12/2016
 tags:
   - code

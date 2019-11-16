@@ -2,7 +2,7 @@
 title: How to setup parse-dashboard alongside parse-server on Digital Ocean
 slug: /how-to-run-parse-dashboard-alongside-parse-server-on-digital-ocean
 short: A new year and a new startup. In 2017 I have been fully focused on myDash and finally got it to a pretty stable state in Q4. It was an awesome process and I really learned how to deal with APIs in the process.
-feature: /images/2016/05/parse-dashboard-server-2.jpg
+feature: /2016/05/parse-dashboard-server-2.jpg
 date: 18/05/2016
 tags:
   - code

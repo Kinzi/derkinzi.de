@@ -2,14 +2,14 @@
 title: Set up automatic backups for parse-server on digital ocean
 slug: /set-up-automatic-backups-for-parse-server-on-digital-ocean
 short: A new year and a new startup. In 2017 I have been fully focused on myDash and finally got it to a pretty stable state in Q4. It was an awesome process and I really learned how to deal with APIs in the process.
-feature: /images/2019/backup.jpg
+feature: /2019/backup.jpg
 date: 25/05/2016
 tags:
   - code
   - server
   - parse
 ---
-<span>Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Spiske</a> on <a href="/s/photos/backup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Markus Spiske</a> on <a href="/s/photos/backup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Unsplash</a></span>
 
 If you run packtor-server on a [digital ocean droplet*](https://m.do.co/c/f5a70d4a6dbb), chances are you followed the instructions from [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-migrate-a-parse-app-to-parse-server-on-ubuntu-14-04) setting everything up. This post is an addition and explains how to set up automatic backups for your MongoDB based on the users and server setups created when following the tutorial.
 
