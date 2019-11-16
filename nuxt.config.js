@@ -118,6 +118,7 @@ export default async () => {
     responsiveLoader: {
       name: 'images/[name]-[width].[ext]',
       sizes: [320, 640, 768, 960, 1024, 1280, 1600, 1920],
+      adapter: require('responsive-loader/sharp'),
       quality: 85
     },
     generate: {

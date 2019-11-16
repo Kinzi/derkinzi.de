@@ -9,6 +9,7 @@
         span.mr-2(v-for="tag in post.attributes.tags")
           nuxt-link(:to="'/tag/'+tag") \#{{tag}}
     .content(v-html="post.html")
+    .border-t.border-gray-500.mt-8.mb-4
     vue-disqus(shortname="derkinzi" :identifier="post.attributes.slug" :title="post.attributes.title" :url="'https://derkinzi.de' +  post.attributes.slug" v-if="!post.attributes.type")
 </template>
 
