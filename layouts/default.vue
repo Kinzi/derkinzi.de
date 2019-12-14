@@ -31,7 +31,19 @@ export default {
   margin-top: 4rem;
 }
 
-@media (min-width: 769px) and (min-height: 767px) {
+/* @media (min-width: 769px) and (min-height: 767px) {
+  #content {
+    margin-left: 20%;
+    margin-top: 0;
+  }
+  #header {
+    height: 100%;
+    bottom: 0;
+    padding: 0;
+  }
+} */
+
+@media (min-width: 769px) {
   #content {
     margin-left: 20%;
     margin-top: 0;
