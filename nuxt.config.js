@@ -18,7 +18,7 @@ export default async () => {
      ** Headers of the page
      */
     head: {
-      title: process.env.npm_package_name || '',
+      title: 'derkinzi | personal blog',
       meta: [
         {
           charset: 'utf-8'
