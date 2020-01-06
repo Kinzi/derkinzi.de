@@ -17,7 +17,6 @@ export default {
 <style>
 #header {
   z-index: 50;
-  overflow: auto;
   top: 0;
   left: 0;
   float: left;
