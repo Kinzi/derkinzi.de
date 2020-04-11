@@ -79,7 +79,7 @@ build: {
     config.module.rules.push(
       {
         test: /\.md$/,
-        include: path.resolve(__dirname, "content")
+        include: path.resolve(__dirname, "content"),
         loader: "frontmatter-markdown-loader",
       }
     );
@@ -181,7 +181,7 @@ With this in place you should be able to see your demo blog post at `http://loca
 
 ### Post listing page
 
-To see all pages (`/pages.blog.vue`) we need to fetch the content a little different. Here is again the simplified version:
+To see all pages (`/pages/blog.vue`) we need to fetch the content a little different. Here is again the simplified version:
 
 ```html
 <template>
