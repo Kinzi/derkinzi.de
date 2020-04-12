@@ -89,7 +89,7 @@ build: {
 
 ### First piece of content
 
-Create a `content/posts` folder in the root of your project and add your first markdown file. Here is some example content:
+Create a `/content/posts/` folder in the root of your project and add your first markdown file. Here is some example content:
 
 ```markdown
 ---
@@ -156,7 +156,7 @@ This is a simplified, unstyled content single post page for `pages/_slug.vue`. I
 <script>
   export default {
     async asyncData({ params }) {
-      let post = await import(`~/content/${params.slug}.md`);
+      let post = await import(`~/content/posts/${params.slug}.md`);
       return { post }
     },
     head() {
