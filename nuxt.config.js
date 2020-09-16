@@ -13,7 +13,6 @@ export default async () => {
   })
   await createSitemap(dynamicRoutes)
   return {
-    mode: 'universal',
     /*
      ** Headers of the page
      */
