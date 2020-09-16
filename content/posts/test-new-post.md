@@ -7,4 +7,9 @@ feature: /img/share-keylogs-1.jpg
 tags:
   - comments
 ---
-Some stuff more
+## Some stuff more
+
+```javascript
+// Javascript
+var test = true
+```
