@@ -8,7 +8,7 @@ public_folder: /img
 collections:
   - name: 'posts'
     label: 'Posts'
-    format: 'md'
+    format: 'markdown'
     folder: 'content/posts'
     create: true
     slug: '{{slug}}'
@@ -26,9 +26,22 @@ collections:
         multiple: true,
         options: ["code", "comments", "startup"]}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    format: 'markdown'
+    folder: 'content/pages'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Short', name: 'short', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'project'
     label: 'Project'
-    format: 'json'
+    format: 'markdown'
     folder: 'content/projects'
     create: true
     slug: '{{slug}}'
