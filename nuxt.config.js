@@ -113,7 +113,10 @@ export default async () => {
     /*
      ** Nuxt.js modules
      */
-    modules: ['nuxt-responsive-loader'],
+    modules: ['@nuxt/content', 'nuxt-responsive-loader'],
+    content: {
+      // Options
+    },
     responsiveLoader: {
       name: 'images/[name]-[width].[ext]',
       sizes: [320, 640, 768, 960, 1024, 1280, 1600, 1920],

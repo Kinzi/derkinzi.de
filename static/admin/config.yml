@@ -8,8 +8,8 @@ public_folder: /img
 collections:
   - name: 'posts'
     label: 'Posts'
-    format: 'json'
-    folder: 'content/post'
+    format: 'md'
+    folder: 'content/posts'
     create: true
     slug: '{{slug}}'
     editor:
@@ -26,3 +26,16 @@ collections:
         multiple: true,
         options: ["code", "comments", "startup"]}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'project'
+    label: 'Project'
+    format: 'json'
+    folder: 'content/projects'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Url', name: 'url', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'file' }
+      - { label: 'Sort', name: 'sort', widget: 'number', value_type: "int" }
