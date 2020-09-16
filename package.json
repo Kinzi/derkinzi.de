@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "jimp": "^0.8.5",
-    "lazysizes": "^5.2.0",
+    "lazysizes": "^5.2.1",
     "moment": "^2.24.0",
     "nuxt": "^2.12.2",
     "nuxt-responsive-loader": "^1.0.6",
