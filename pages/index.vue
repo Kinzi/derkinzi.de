@@ -15,6 +15,13 @@ export default {
     PostShort
   },
   layout: 'intro',
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ]
+    }
+  },
   async asyncData() {
     const resolve = await require.context('~/content/posts/', true, /\.md$/)
     let imports = resolve.keys().map((key) => resolve(key))
