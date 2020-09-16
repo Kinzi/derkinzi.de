@@ -2,14 +2,18 @@
 .site
   Header.w-full(class="lg:w-1/5 lg:fixed")
   #content.bg-gray-200.w-full.px-4(class="lg:w-4/5 md:px-12 lg:px-20")
-    nuxt.py-4(class="md:py-12")
+    nuxt.pt-4(class="md:pt-12")
+    Footer
 </template>
 
 <script>
 import Header from '~/components/header'
+import Footer from '~/components/Footer'
+
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

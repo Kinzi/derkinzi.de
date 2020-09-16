@@ -1,6 +1,6 @@
 ---
 title: Keylogs
 url: https://keylogs.io
-image:  /projects/keylogs.jpg
+image:  /img/keylogs.jpg
 sort: 6
 ---

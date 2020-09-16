@@ -3,7 +3,7 @@ title: "My second launch this year: Keylogs is LIVE on Product Hunt today!"
 slug: /keylogs-live-on-producthunt
 short: I'm very exited to launch Keylogs on Product Hunt today. It's my second launch this year and here's a little background about my process making it.
 date: 12/02/2018
-feature: /2018/02/blog-header.jpg
+feature: /img/blog-header.jpg
 tags:
   - code
   - comments

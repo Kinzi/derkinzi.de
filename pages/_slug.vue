@@ -1,6 +1,6 @@
 <template lang="pug">
   #post
-    img.rounded.shadow.my-4.w-full.h-128.object-cover(:src="'~/assets/images' + post.feature" :srcset="require('~/assets/images' + post.feature).srcSet" sizes="(min-width: 768px) 60vw, 95vw" v-if="post.feature")
+    img.rounded.shadow.my-4.w-full.h-128.object-cover(:src="post.feature" v-if="post.feature")
     .post-title.mt-2
       h1 {{post.title}}
     .post-meta.flex.text-gray-500.justify-between.my-4.flex-col(class="md:flex-row" v-if="!post.type")
@@ -8,9 +8,8 @@
       .tags
         span.mr-2(v-for="tag in post.tags")
           nuxt-link(:to="'/tag/'+tag") \#{{tag}}
-    //- .content(v-html="post.body")
     nuxt-content.content(:document="post")
-    .border-t.border-gray-500.mt-8.mb-4
+    .border-t.border-gray-500.mt-8.mb-4(v-if="!post.type")
     vue-disqus(shortname="derkinzi" :identifier="post.slug" :title="post.title" :url="'https://derkinzi.de' +  post.slug" v-if="!post.type")
 </template>
 
@@ -23,15 +22,14 @@ export default {
       const post = await $content(`posts/${params.slug}`).fetch()
       return { post }
     } catch (e) {
-      error({ message: 'Blog Post not found' })
+      try {
+        const post = await $content(`pages/${params.slug}`).fetch()
+        post.type = 'page'
+        return { post }
+      } catch (e) {
+        error({ message: 'Blog Post not found' })
+      }
     }
-
-    // try {
-    //   const post = await import(`~/content/posts/${params.slug}.md`)
-    //   return { post }
-    // } catch (err) {
-    //   return false
-    // }
   },
   mounted() {
     Prism.highlightAll()

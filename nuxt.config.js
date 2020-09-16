@@ -9,6 +9,7 @@ export default async () => {
   // tags will be handled differently
   const dynamicRoutes = await getDynamicPaths({
     '': 'posts/*.md',
+    '/pages': 'pages/*.md',
     '/tag': 'posts/*.md'
   })
   await createSitemap(dynamicRoutes)

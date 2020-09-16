@@ -3,20 +3,25 @@
   Header.w-full(class="lg:w-1/5 lg:fixed")
   #content.bg-gray-200.w-full(class="lg:w-4/5")
     .flex.relative.bg-gray-500.px-4.text-center.py-20.bg-local(class="md:px-12 lg:px-20")
-      img.absolute.mx-auto.inset-0.object-cover.w-full.z-0.h-full(src="~/assets/images/2016/05/derkinzi-back.jpg" :srcset="require('~/assets/images/2016/05/derkinzi-back.jpg').srcSet" sizes="(min-width: 769px) 75vw, 100vw")
+      img.absolute.mx-auto.inset-0.object-cover.w-full.z-0.h-full(src="~/assets/images/derkinzi-back.jpg" :srcset="require('~/assets/images/derkinzi-back.jpg').srcSet" sizes="(min-width: 769px) 75vw, 100vw")
       .z-40.text-center
         img.shadow-lg.rounded-full.border-2.border-teal-500.w-16.mx-auto(class="lg:w-32" src="~/assets/images/derkinzi.jpg" sizes="10vw" :srcset="require('~/assets/images/derkinzi.jpg').srcSet")
         .bg-white50.rounded.shadow.p-4.mt-4
           .text-2xl Hi there!
           .mt-2 My name is Sebastian. I usually venture on the internetz as @derkinzi. I'm a marketer turned developer and founder. Here I share thoughts on building: webprojects, tech hacks, and remote companies.
     nuxt.py-4(class="md:py-12 md:px-12 lg:px-20")
+    .container(class="md:px-12 lg:px-20")
+      Footer
 </template>
 
 <script>
 import Header from '~/components/header'
+import Footer from '~/components/Footer'
+
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

@@ -1,6 +1,6 @@
 ---
 title: webmarken
 url: https://webmarken.com
-image:  /projects/webmarken.jpg
+image:  /img/webmarken.jpg
 sort: 1
 ---

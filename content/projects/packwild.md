@@ -1,6 +1,6 @@
 ---
 title: packwild
 url: https://www.packwild.de
-image:  /projects/packwild.jpg
+image:  /img/packwild.jpg
 sort: 3
 ---
