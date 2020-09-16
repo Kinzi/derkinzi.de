@@ -23,7 +23,7 @@ collections:
         name: "tags",
         widget: "select",
         multiple: true,
-        options: ["code", "comments", "startup"]}
+        options: ["code", "comments", "startup", "ressources", "server", "parse", "nuxt", "JAMstack", "frontend", "netlify", "prism"]}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'

@@ -39,6 +39,7 @@ export default async function(urlFilepathTable) {
   // Push tag pages to pages array
   const pages = []
   for (const tag of tags) {
+    console.log(tag)
     pages.push('/tag/' + tag)
   }
 
