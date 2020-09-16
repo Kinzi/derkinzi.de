@@ -2,7 +2,7 @@
 title: A new year and a new startup
 slug: /a-new-year-and-a-new-startup
 short: A new year and a new startup. In 2017 I have been fully focused on myDash and finally got it to a pretty stable state in Q4. It was an awesome process and I really learned how to deal with APIs in the process.
-feature: /2018/01/share-keylogs-1.jpg
+feature: /img/share-keylogs-1.jpg
 date: 19/01/2018
 tags:
   - code
@@ -26,14 +26,14 @@ In the process of making this deep analysis of my site I learned a few things:
 
 First of all I noticed again what a rich source of insights the Google Search Console can be for SEO work. Not only is it (I think) the only source for click-through-rates of search results, but it simply has all the search data that's relevant for your site for free: all the keywords and all the pages in the index. If you dig long and deep enough and combine this with Google analytics and maybe the Keyword Planner you can find out pretty much everything you'd want to know about your site and keyword performance right at the heart of Google.
 
-![Google Search Console Dashboard](/images/2018/01/Bildschirmfoto-2018-01-19-um-17.58.08.png)
+![Google Search Console Dashboard](/img/Bildschirmfoto-2018-01-19-um-17.58.08.png)
 
 ### Google Search Console is very hard to use
 
 While the GSC has all this awesome data it is quite tedious to work with it and you will most likely not be able to find any good insights if you do not export it into your own spreadsheet and combine it with other layers of data. 
 So, while technically you can find out a whole lot, with the data being completely bare it just takes a few unnecessary loops to do so.
 
-![Analysis in a Spreadsheet](/images/2018/01/Bildschirmfoto-2018-01-19-um-18.00.28.png)
+![Analysis in a Spreadsheet](/img/Bildschirmfoto-2018-01-19-um-18.00.28.png)
 
 ### It's annoying to connect Google Search Console and Google Analytics data and I still hate spreadsheets
 
@@ -68,7 +68,7 @@ Quite often SEO tools are either Keyword or on page focused. This makes sense if
 
 This was very important for me: I wanted a simple way to keep track of changes I made to a particular page so I could see it's effects on the ranking on a single glance. 
 
-![Track Ranking changes with Keylogs](/images/2018/01/Bildschirmfoto-2018-01-18-um-13.01.11.png)
+![Track Ranking changes with Keylogs](/img/Bildschirmfoto-2018-01-18-um-13.01.11.png)
 
 ### Personal reasons
 
@@ -79,9 +79,9 @@ Also, being a passionate maker of things what I most enjoy is the process of bui
 
 To be honest in the beginning I only wanted to build a small tool for myself but I quickly realized that by building what I wanted, with very little extra work I could turn this into a pretty good web app eventually into a SaaS business if it turns out to be useful for others as well. 
 
-![Keylogs PageXplorer Table](/images/2018/01/Bildschirmfoto-2018-01-15-um-13.03.41.png)
+![Keylogs PageXplorer Table](/img/Bildschirmfoto-2018-01-15-um-13.03.41.png)
 
 I must have learned quite a bit in the last months as I was able to hack together a first functioning version of what I wanted in about two weeks.  I opened it some friends to get a first feedback and since their feedback was rather positive I decided to work on it for two more weeks, adding a few more features and debugging it before launching the [public beta on betalist](https://betalist.com/startups/keylogs).
 
-![Keyword detail view](/images/2018/01/Bildschirmfoto-2018-01-19-um-18.05.06.png)
+![Keyword detail view](/img/Bildschirmfoto-2018-01-19-um-18.05.06.png)
 

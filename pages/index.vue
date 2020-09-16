@@ -2,7 +2,7 @@
 #home
   #blogroll
     ul.list-none
-      li.mt-10.border-b.border-gray-400.pb-10(class="md:mt-20 md:pb-20" v-for="post in posts" :key="post.attributes.title")
+      li.mt-10.border-b.border-gray-400.pb-10(class="md:mt-20 md:pb-20 last:border-b-0" v-for="post in posts" :key="post.title")
         PostShort(:post="post")
 </template>
 
@@ -15,19 +15,21 @@ export default {
     PostShort
   },
   layout: 'intro',
-  async asyncData() {
-    const resolve = await require.context('~/content/posts/', true, /\.md$/)
-    let imports = resolve.keys().map((key) => resolve(key))
-    // filter out page type
-    imports = imports.filter((post) => !post.attributes.type)
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ]
+    }
+  },
+  async asyncData({ $content }) {
+    const posts = await $content('posts').fetch()
     // sort by date
-    imports.sort((a, b) =>
-      moment(b.attributes.date, 'DD/MM/YYYY').diff(
-        moment(a.attributes.date, 'DD/MM/YYYY')
-      )
+    posts.sort((a, b) =>
+      moment(b.date, 'DD/MM/YYYY').diff(moment(a.date, 'DD/MM/YYYY'))
     )
     return {
-      posts: imports
+      posts
     }
   }
 }

@@ -39,6 +39,7 @@ export default async function(urlFilepathTable) {
   // Push tag pages to pages array
   const pages = []
   for (const tag of tags) {
+    console.log(tag)
     pages.push('/tag/' + tag)
   }
 
@@ -49,7 +50,10 @@ export default async function(urlFilepathTable) {
       .map((url) => {
         return glob
           .sync(urlFilepathTable[url], { cwd: 'content' })
-          .map((filepath) => `${url}/${path.basename(filepath, '.md')}`)
+          .map((filepath) => {
+            if (url === '/pages') url = ''
+            return `${url}/${path.basename(filepath, '.md')}`
+          })
       })
   )
 }

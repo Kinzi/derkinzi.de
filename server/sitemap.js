@@ -39,7 +39,8 @@ export default async function(pages) {
     let xml =
       '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
     // Add static pages
-    for (const slug of pages) {
+    for (let slug of pages) {
+      if (slug === '/index') slug = ''
       xml += createUrl('https://derkinzi.de', slug, freq, priority)
     }
     xml += '</urlset>'

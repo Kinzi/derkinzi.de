@@ -2,7 +2,7 @@
 title: About myDash - What’s the stack and why did I choose it?
 slug: /about-mydash-whats-the-stack-and-why-did-i-choose-it
 short: Learn about my framework choices for my startup myDash for frontend, backend, database and server and why I took them. 
-feature: /2017/10/mydash-frameworks.png
+feature: /img/mydash-frameworks.png
 date: 16/10/2017
 tags:
   - code
@@ -20,7 +20,7 @@ This also applied for my framework decisions for [myDash - the all-in-one affili
 
 Before starting to code myDash frontend development was the field I was most experienced in. I already worked with Angular 1 and Ionic for [Packtor - The Packing List creator](https://packtor.com) for example. So it was a pretty easy choice to just start with angular 1 again.
 
-I did consider switching to Angular 2 (or 4?!?) but there where so many changes (the least being the use of typescript) that it felt like a whole new framework rather then merely a development. So I scratched it for the sake of ease and development speed. Furthermore I use bower, grunt and sass in the development process. 
+I did consider switching to Angular 2 (or 4?!?) but there where so many changes (the least being the use of typescript) that it felt like a whole new framework rather then merely a development. So I scratched it for the sake of ease and development speed. Furthermore I use bower, grunt and sass in the development process.
 
 In the last month I kept looking into and worked with [vue.js](https://vuejs.org/) as an alternative to Angular 1 rather than Angular 2. It feels closer to what I’m used to and I want to try it in my next project. The much hyped React on the other hand is no option for me since it has a very steep learning curve ~~, is owned by Facebook~~ and I don’t like the resulting markup one bit. 🤢
 

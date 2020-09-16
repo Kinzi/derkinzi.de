@@ -2,7 +2,7 @@
 title: "WordPress hosting test: super fast on raidboxes.eu"
 slug: /super-fast-wordpress-hosting-germany
 short: How I drastically improved my site speed by switching from a vserver to WordPress optimized hosting on raidboxes.eu
-feature: /2016/09/raidboxes-speed.jpg
+feature: /img/raidboxes-speed.jpg
 date: 09/12/2016
 tags:
   - code
@@ -22,11 +22,11 @@ I used to have a decent hoster with a decent cloud hosting plan. It's actually a
 
 This is the [pingdom](https://tools.pingdom.com/)(great tool) result from my site on the old server:
 
-![old site speed](/images/2016/09/Bildschirmfoto-2016-09-10-um-16-46-35.png)
+![old site speed](/img/Bildschirmfoto-2016-09-10-um-16-46-35.png)
 
 The performance grade is actually quite nice and - OK - the testing server is in Sweden and it's actually not that bad when browsing the site from Germany. However, the site loads slow as *#%&. As you can see here, this was mainly due to time to first byte and response time only starting after like 1000ms - i.e. server issues:
 
-![old site speed](/images/2016/09/hosting_timefirstbyte.jpg)
+![old site speed](/img/hosting_timefirstbyte.jpg)
 
 I tried pretty much everything: several caching plugins (like W3 or wp-super-cache), and front end optimization. All this helped but somehow over the month my server response time got slower and slower. Google page speed sometimes tracked a **server response time of more than 2 seconds**. It was an outrage! 😖
 
@@ -34,7 +34,7 @@ As I wrote above I got super tired of trying to optimize my server and caching s
 
 Long story short, here are the results after transferring my site to RAIDBOXES. Even though performance grade and size are a little worse, the speed is simply breathtaking:
 
-![new site speed](/images/2016/09/Bildschirmfoto-2016-09-10-um-16-46-05.png)
+![new site speed](/img/Bildschirmfoto-2016-09-10-um-16-46-05.png)
 
 ## How it's working
 
@@ -49,15 +49,15 @@ This might be a disadvantage if you have a super individual WordPress setup, but
 Just for pure joy, here are a few more stats. I think they'll speak for themselves. Here's a little before and after:
 Apdex (explanation [here](https://en.wikipedia.org/wiki/Apdex)):
 
-![after switching hoster](/images/2016/09/Bildschirmfoto-2016-09-11-um-10-26-30.png)
+![after switching hoster](/img/Bildschirmfoto-2016-09-11-um-10-26-30.png)
 
 Response time:
 
-![after switching hoster2](/images/2016/09/Bildschirmfoto-2016-09-11-um-10-26-40.png)
+![after switching hoster2](/img/Bildschirmfoto-2016-09-11-um-10-26-40.png)
 
 And the breakdown of the raidbox hosting in detail:
 
-![after switching hoster3](/images/2016/09/Bildschirmfoto-2016-09-11-um-10-26-05.png)
+![after switching hoster3](/img/Bildschirmfoto-2016-09-11-um-10-26-05.png)
 
 *If you wonder where I get those beautiful graphs from. It's my uptime monitor [Apex Ping](https://apex.sh/ping/).*
 

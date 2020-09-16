@@ -3,7 +3,7 @@ title: How to use optimized, responsive and lazyloading images in a nuxt project
 slug: /optimized-responsive-lazyloading-images-with-nuxt
 short: How to build a SEO optimized, static file blog with nuxtjs and markdown files. Including a sitemap.xml and category or tag pages.
 date: 16/11/2019
-feature: /2019/optimize-images-nuxtjs.jpg
+feature: /img/optimize-images-nuxtjs.jpg
 tags:
   - code
   - nuxt

@@ -9,11 +9,11 @@ export default async () => {
   // tags will be handled differently
   const dynamicRoutes = await getDynamicPaths({
     '': 'posts/*.md',
+    '/pages': 'pages/*.md',
     '/tag': 'posts/*.md'
   })
   await createSitemap(dynamicRoutes)
   return {
-    mode: 'universal',
     /*
      ** Headers of the page
      */
@@ -114,7 +114,10 @@ export default async () => {
     /*
      ** Nuxt.js modules
      */
-    modules: ['nuxt-responsive-loader'],
+    modules: ['@nuxt/content', 'nuxt-responsive-loader'],
+    content: {
+      // Options
+    },
     responsiveLoader: {
       name: 'images/[name]-[width].[ext]',
       sizes: [320, 640, 768, 960, 1024, 1280, 1600, 1920],

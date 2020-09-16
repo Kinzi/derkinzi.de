@@ -1,6 +1,6 @@
 ---
 title: MyDash
 url: https://mydash.io
-image:  /projects/mydash.jpg
+image:  /img/mydash.jpg
 sort: 5
 ---

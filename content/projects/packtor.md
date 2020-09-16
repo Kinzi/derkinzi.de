@@ -1,6 +1,6 @@
 ---
 title: packtor
 url: https://packtor.com
-image:  /projects/packtor.jpg
+image:  /img/packtor.jpg
 sort: 4
 ---

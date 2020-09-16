@@ -1,7 +1,9 @@
 ---
 title: About
 slug: /about
-short: A blog post about nothing again. It just keeps coming. A blog post about nothing again. It just keeps coming. A blog post about nothing again. It just keeps coming. A blog post about nothing again. It just keeps coming.
+short: I thrive to be a creator of things. Finding solutions for challenging
+  problems that are out of my comfort zone is what gets me going - as this is
+  the best way for me to learn and grow.
 type: page
 ---
 

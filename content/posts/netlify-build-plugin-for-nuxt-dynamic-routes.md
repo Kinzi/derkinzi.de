@@ -3,7 +3,7 @@ title: Use a netlify build plugin to generate your nuxt routes
 slug: /netlify-build-plugin-for-nuxt-dynamic-routes
 short: When you get content from a headless CMS, sometimes you need to define a routes file for your nuxt build and sitemap file to work properly. Here I show you how to do that with netlify.
 date: 08/08/2020
-feature: /2020/netlify-build-plugin.jpg
+feature: /img/netlify-build-plugin.jpg
 tags:
   - code
   - nuxt
@@ -27,7 +27,7 @@ With the new directus this really is easy as. Just go to Settings > Webhooks and
 
 You can easily create one here: `https://app.netlify.com/sites/YOURSITE/settings/deploys#build-hooks`
 
-![old site speed](/images/2020/directus-webhook.png)
+![old site speed](/img/directus-webhook.png)
 
 ## The Netlify Build Plugin for dynamic Nuxt Routes
 
