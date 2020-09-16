@@ -8,7 +8,6 @@ public_folder: /img
 collections:
   - name: 'posts'
     label: 'Posts'
-    format: 'markdown'
     folder: 'content/posts'
     create: true
     slug: '{{slug}}'
@@ -28,7 +27,6 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'
-    format: 'markdown'
     folder: 'content/pages'
     create: true
     slug: '{{slug}}'
@@ -41,7 +39,6 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'project'
     label: 'Project'
-    format: 'markdown'
     folder: 'content/projects'
     create: true
     slug: '{{slug}}'
