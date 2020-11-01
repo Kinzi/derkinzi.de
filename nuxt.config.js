@@ -68,20 +68,20 @@ export default async () => {
           href: '/safari-pinned-tab.svg',
           color: '#7ec699'
         }
-      ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=UA-49352822-2',
-          async: true,
-          defer: false
-        },
-        {
-          type: 'text/javascript',
-          innerHTML:
-            "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-49352822-2');"
-        }
       ]
+      // __dangerouslyDisableSanitizers: ['script'],
+      // script: [
+      //   {
+      //     src: 'https://www.googletagmanager.com/gtag/js?id=UA-49352822-2',
+      //     async: true,
+      //     defer: false
+      //   },
+      //   {
+      //     type: 'text/javascript',
+      //     innerHTML:
+      //       "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-49352822-2');"
+      //   }
+      // ]
     },
 
     /*
@@ -120,8 +120,10 @@ export default async () => {
       [
         'nuxt-matomo',
         {
-          matomoUrl: '//matomo.webmarken.com/',
-          siteId: 1
+          matomoUrl: 'https://matomo.webmarken.com/',
+          siteId: 1,
+          debug: true,
+          verbose: true
         }
       ]
     ],
