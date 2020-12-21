@@ -25,14 +25,14 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
+    "@nuxt/content": "^1.11.1",
     "jimp": "^0.8.5",
     "lazysizes": "^5.2.2",
-    "moment": "^2.28.0",
-    "nuxt": "^2.14.5",
+    "moment": "^2.29.1",
+    "nuxt": "^2.14.12",
     "nuxt-matomo": "^1.2.3",
     "nuxt-responsive-loader": "^1.0.6",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.22.0",
     "sharp": "^0.23.4",
     "vue-disqus": "^3.0.5"
   },
@@ -44,16 +44,16 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-nuxt": "^0.5.2",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-vue-libs": "^4.0.0",
-    "frontmatter-markdown-loader": "^3.6.0",
+    "frontmatter-markdown-loader": "^3.6.2",
     "fs": "0.0.1-security",
     "husky": "^2.6.0",
     "lint-staged": "^8.2.1",
     "prettier": "^1.19.1",
     "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0",
+    "pug-plain-loader": "^1.1.0",
     "responsive-loader": "^1.2.0",
-    "yaml-front-matter": "^4.1.0"
+    "yaml-front-matter": "^4.1.1"
   }
 }

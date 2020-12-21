@@ -139,6 +139,9 @@ export default async () => {
     generate: {
       routes: dynamicRoutes
     },
+    router: {
+      trailingSlash: false
+    },
     purgeCSS: {
       whitelistPatternsChildren: [/token$/]
     },
