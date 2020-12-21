@@ -3,7 +3,7 @@ import glob from 'glob'
 
 function createUrl(domain, slug, frequency, priority) {
   let xml = '<url>'
-  xml += `<loc>${domain}${slug}</loc>`
+  xml += `<loc>${domain}${slug}/</loc>`
   xml += '<changefreq>' + frequency + '</changefreq>'
   xml += '<priority>' + priority + '</priority>'
   xml += '</url>'

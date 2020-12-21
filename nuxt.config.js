@@ -140,7 +140,7 @@ export default async () => {
       routes: dynamicRoutes
     },
     router: {
-      trailingSlash: false
+      trailingSlash: true
     },
     purgeCSS: {
       whitelistPatternsChildren: [/token$/]
