@@ -48,7 +48,7 @@ import lazySizes from 'lazysizes'
 export default lazySizes
 ```
 
-No simply include this in the plugins sections of your `nuxt.config.js` and make sure `data-src` attributes get handled on build:
+Now simply include this in the plugins sections of your `nuxt.config.js` and make sure `data-src` attributes get handled on build:
 
 ```javascript
 plugins: [
