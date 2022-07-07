@@ -28,7 +28,7 @@
     "@nuxt/content": "^1.11.1",
     "jimp": "^0.8.5",
     "lazysizes": "^5.2.2",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "nuxt": "^2.14.12",
     "nuxt-matomo": "^1.2.3",
     "nuxt-responsive-loader": "^1.0.6",
