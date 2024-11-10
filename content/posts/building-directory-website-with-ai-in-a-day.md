@@ -60,6 +60,9 @@ Once the site framework was in place, I moved on to content. Here’s the breakd
 
 In about an hour and a half, I had 80 tool entries created automatically—a process that would have taken days without AI.
 
+![Content Automation](/img/content-automation.png)
+
+
 ### CMS & Deployment
 
 To manage content more efficiently, I chose Netlify CMS, which allowed everything to stay on Netlify for straightforward deployment.
