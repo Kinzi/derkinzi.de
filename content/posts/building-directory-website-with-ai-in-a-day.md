@@ -2,7 +2,7 @@
 title: How I Built a Directory Website in a Day with AI—and Why It's a Game-Changer for SaaS Traffic
 slug: building-directory-website-with-ai-in-a-day
 short: Learn how I leveraged AI tools to build BestLinkedInTools.com in just one day. Using Claude, GPT, and automation, I created a scalable directory website that drives traffic to my SaaS product while demonstrating the game-changing potential of AI in web development.
-feature: /img/share-keylogs-1.jpg
+feature: /img/bestlinkedintools.png
 date: 10/11/2024
 tags:
   - code
