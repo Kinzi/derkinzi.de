@@ -22,9 +22,9 @@ This article walks through the steps, tools, and takeaways from building a fully
 
 Inspired by John Rush’s insights, my main motivation for building a directory website was twofold:
 
-1. **Generate Traffic for My SaaS, ContentIn:** I wanted to leverage the ease of ranking a directory site in search engines compared to a typical SaaS landing page. Directories can serve as significant entry points for traffic, and I knew *BestLinkedInTools.com* could help drive relevant users to my SaaS product.
+1. **Generate Traffic for My SaaS, ContentIn:** I wanted to leverage the ease of ranking a directory site in search engines compared to a typical SaaS landing page. Directories can serve as significant entry points for traffic, and I knew bestlinkedintools.com could help drive relevant users to my SaaS product.
 
-2. **Create a Monetizable Side Hustle:** Beyond traffic, I saw the potential for *BestLinkedInTools.com* as a standalone business. Over time, I could monetize it with paid listings or affiliate links, but first, I needed it to rank and generate consistent traffic.
+2. **Create a Monetizable Side Hustle:** Beyond traffic, I saw the potential for bestlinkedintools.com as a standalone business. Over time, I could monetize it with paid listings or affiliate links, but first, I needed it to rank and generate consistent traffic.
 
 With those goals in mind, I set out to build a high-quality, reusable website that could expand easily into other directories if the model proved successful.
 
@@ -107,4 +107,4 @@ The experience was a reminder of the times we’re living in—where anyone with
 
 ---
 
-**P.S.**: By the way, this article was crafted with GPT as my co-writer. I dictated the story on my way to work, and GPT helped organize and polish the final piece. AI—helping us all work smarter, even in content creation.
+**P.S.**: By the way, this article was crafted with GPT as my co-writer. I dictated the story on my way to work into GPT, and the AI then wrote this post from it. Probably my biggest lifehack atm: voice -> GPT -> content.
