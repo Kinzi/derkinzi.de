@@ -13,8 +13,8 @@
     "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "engines": {
-    "node": "10.22.0",
-    "npm": "6.14.6"
+    "node": "14.x",
+    "npm": "6.x"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.2.0",
-    "@nuxtjs/tailwindcss": "^1.4.1",
+    "@nuxtjs/tailwindcss": "4.2.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^4.1.0",
@@ -54,6 +54,9 @@
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.1.0",
     "responsive-loader": "^1.2.0",
-    "yaml-front-matter": "^4.1.1"
+    "yaml-front-matter": "^4.1.1",
+    "postcss": "^8.4.4",
+    "autoprefixer": "^10.4.0",
+    "tailwindcss": "^2.2.19"
   }
 }

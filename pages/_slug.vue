@@ -57,53 +57,53 @@ export default {
 
 <style>
 .nuxt-content ol {
-  @apply .list-decimal .ml-6;
+  @apply list-decimal ml-6;
 }
 
 .nuxt-content ul {
-  @apply .list-disc .ml-6;
+  @apply list-disc ml-6;
 }
 
 .nuxt-content pre code {
-  @apply .bg-transparent;
+  @apply bg-transparent;
 }
 
 .nuxt-content code {
-  @apply .bg-gray-300 .px-1 .font-mono .rounded .border .border-gray-400;
+  @apply bg-gray-300 px-1 font-mono rounded border border-gray-400;
 }
 
 .nuxt-content hr {
-  @apply .my-8;
+  @apply my-8;
 }
 
 .nuxt-content img {
-  @apply .rounded .shadow;
+  @apply rounded shadow;
 }
 
 .nuxt-content pre {
-  @apply .rounded;
+  @apply rounded;
 }
 
 .nuxt-content pre[class*='language-'] {
-  @apply .mb-4 !important;
+  @apply mb-4 !important;
 }
 
 .nuxt-content code[class*='language-'],
 .nuxt-content pre[class*='language-'] {
-  @apply .font-mono !important .border-none;
+  @apply font-mono !important border-none;
   text-shadow: none !important;
 }
 
 .nuxt-content code[class*='language-'] {
-  @apply .p-0;
+  @apply p-0;
 }
 
 .nuxt-content blockquote {
-  @apply .border-l-4 .border-gray-400 .pl-4 .italic .ml-4 .my-8;
+  @apply border-l-4 border-gray-400 pl-4 italic ml-4 my-8;
 }
 
 .nuxt-content h3 {
-  @apply .text-xl .font-mono .text-gray-800 .mb-4;
+  @apply text-xl font-mono text-gray-800 mb-4;
 }
 
 .nuxt-content .crop-post-image {
