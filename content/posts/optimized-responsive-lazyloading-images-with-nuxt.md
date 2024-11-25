@@ -10,7 +10,7 @@ tags:
   - JAM
   - frontend
 ---
-<span>Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">chuttersnap</a> on <a href="/s/photos/speed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">chuttersnap</a> on Unsplash</span>
 
 So the goal was to get this blog super fast by using static pages and hosting it on netlify to make use of their CDN. So after getting Nuxt to work with markdown and render all pages as described [here](/nuxt-jam-stack) I uploaded the files to netlify - eager to see the site's speed.
 
